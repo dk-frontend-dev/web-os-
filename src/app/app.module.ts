@@ -7,6 +7,7 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 import {AppRoutingModule} from '@/app-routing.module'
 import {AppComponent} from '@/app.component'
 import {environment} from '@env/environment'
+import {BotbarModule} from '@/shared/botbar/botbar.module'
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import {environment} from '@env/environment'
     StoreDevtoolsModule.instrument({
       maxAge: 20,
       logOnly: environment.production
-    })
+    }),
+    BotbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

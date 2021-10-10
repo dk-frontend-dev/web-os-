@@ -1,0 +1,53 @@
+.botbar {
+  width: max-content;
+  padding: 4px 10px;
+  border-radius: 18px;
+  border: 1px solid rgba(#fff, 0.4);
+  background: rgba(16 18 27 / 40%);
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  z-index: 5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.botbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botbar__item:hover .hint {
+  transform: translate(-50%, calc(-100% - 13px));
+  opacity: 1;
+}
+
+.botbar__item,
+.botbar__link {
+  height: 65px;
+  width: 65px;
+  display: inline-block;
+}
+
+.botbar__link.messages {
+  img {
+    margin: 2.5px auto;
+    display: block;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.botbar__item {
+  margin-right: 7px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.botbar__icon {
+  width: inherit;
+  height: inherit;
+}
